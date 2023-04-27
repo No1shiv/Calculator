@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="calc.jpg">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="cal_container">
+       <table>
+        <tr>
+            <td colspan="3">
+                <input type="text" value="" id="output" class="display">
+            </td>
+            <td>
+                <button class="keys clear" onclick="allclear()">AC</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="keys" onclick="showkey('7')">7</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('8')">8</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('9')">9</button>
+            </td>
+            <td>
+                <button class="keys arithematic" onclick="showkey('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="keys" onclick="showkey('4')">4</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('5')">5</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('6')">6</button>
+            </td>
+            <td>
+                <button class="keys arithematic" onclick="showkey('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="keys" onclick="showkey('1')">1</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('2')">2</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('3')">3</button>
+            </td>
+            <td>
+                <button class="keys arithematic" onclick="showkey('/')">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="keys arithematic" onclick="showkey('.')">.</button>
+            </td>
+            <td>
+                <button class="keys" onclick="showkey('0')">0</button>
+            </td>
+            <td>
+                <button class="keys arithematic" onclick="showkey('*')">*</button>
+            </td>
+            <td>
+                <button class="keys equal" onclick="result()">=</button>
+            </td>                          
+        </tr>
+
+       </table>      
+    </div>
+
+    <footer class="foot">
+        <h2>
+            &copy Shiv Narayan Rawat
+        </h2>
+    </footer>
+
+</body>
+
+</html>
